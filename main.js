@@ -16,7 +16,7 @@ for (let currentNumber = 1; currentNumber <= 100; currentNumber++) {
 let bandNumber = 1
 
 const takeNumber = function (bandName) {
-  let eachBand = bandNumber + `. ${bandName}`
+  let eachBand = `${bandNumber}. ${bandName}`
   bandNumber++
   return eachBand
 }
@@ -27,6 +27,8 @@ console.log(scum)  // This should print "1. Galactic Scum" in the console
 const under = takeNumber("Underdogs")
 console.log(under)  // This should print "2. Underdogs" in the console
 
+// In-class solution: return `${bandNumber++}. ${bandName}`
+// Can change to arrow function: const takeNumber = (bandName) => `${bandNumber++}. ${bandName}`
 
 // Practice: Cookout 
 const hamburger = {
@@ -61,7 +63,7 @@ const foods = [hamburger, zucchini, chickenBreast, corn, steak];
 // An empty array that will store the objects after the `grill()` function cooks the food.
 const cookedFood = [];
 
-function grill (eachFood) {
+function grill(eachFood) {
   // Modify the food so that it is cooked
 
   eachFood.cooked = true;
@@ -70,7 +72,7 @@ function grill (eachFood) {
   cookedFood.push(eachFood);
 };
 
-foods.forEach((currentFood)=>{
+foods.forEach((currentFood) => {
   grill(currentFood)
 })
 
