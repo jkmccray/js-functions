@@ -4,11 +4,11 @@ for (let currentNumber = 1; currentNumber <= 100; currentNumber++) {
   if (currentNumber % 5 === 0 && currentNumber % 7 === 0) {
     console.log("ChickenMonkey") // Multiples of 5 and 7 will say "ChickenMonkey"
   } else if (currentNumber % 5 === 0) {
-      console.log("Chicken") // Multiples of 5 will say "Chicken"
+    console.log("Chicken") // Multiples of 5 will say "Chicken"
   } else if (currentNumber % 7 === 0) {
-      console.log("Monkey") // Multiples of 7 will say "Monkey"
+    console.log("Monkey") // Multiples of 7 will say "Monkey"
   } else {
-      console.log(currentNumber)
+    console.log(currentNumber)
   }
 }
 
@@ -30,29 +30,29 @@ console.log(under)  // This should print "2. Underdogs" in the console
 
 // Practice: Cookout 
 const hamburger = {
-	name: 'Hamburger',
-	type: 'beef',
-	cooked: false,
+  name: 'Hamburger',
+  type: 'beef',
+  cooked: false,
 }
 const zucchini = {
-	name: 'Zucchini',
-	type: 'vegetable',
-	cooked: false,
+  name: 'Zucchini',
+  type: 'vegetable',
+  cooked: false,
 }
 const chickenBreast = {
-	name: 'Chicken Breast',
-	type: 'chicken',
-	cooked: false,
+  name: 'Chicken Breast',
+  type: 'chicken',
+  cooked: false,
 }
 const corn = {
-	name: 'Corn',
-	type: 'vegetable',
-	cooked: false,
+  name: 'Corn',
+  type: 'vegetable',
+  cooked: false,
 }
 const steak = {
-	name: 'Steak',
-	type: 'beef',
-	cooked: false,
+  name: 'Steak',
+  type: 'beef',
+  cooked: false,
 }
 
 // An array that is grouping the objects together.
@@ -61,20 +61,17 @@ const foods = [hamburger, zucchini, chickenBreast, corn, steak];
 // An empty array that will store the objects after the `grill()` function cooks the food.
 const cookedFood = [];
 
-function grill (currentObject) {
+function grill (eachFood) {
   // Modify the food so that it is cooked
-  
-  currentObject.cooked = true;
+
+  eachFood.cooked = true;
 
   // Put the cooked food into the appropriate array
-  cookedFood.push(currentObject);
+  cookedFood.push(eachFood);
 };
 
 foods.forEach((currentFood)=>{
   grill(currentFood)
 })
 
-// Practice: Overly Excited
-function addExcitement() {
-  
-}
+console.log(cookedFood)
