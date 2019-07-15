@@ -2,7 +2,7 @@
 for (let currentNumber = 1; currentNumber <= 100; currentNumber++) {
   // Divide the current number by 5, and check if the remainder is 0
   if (currentNumber % 5 === 0 && currentNumber % 7 === 0) {
-    console.log("ChickenMonkey")
+    console.log("ChickenMonkey") // Multiples of 5 and 7 will say "ChickenMonkey"
   } else if (currentNumber % 5 === 0) {
       console.log("Chicken") // Multiples of 5 will say "Chicken"
   } else if (currentNumber % 7 === 0) {
